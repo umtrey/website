@@ -1,241 +1,84 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
+<head>
+    <meta charset="UTF-8">
+    <title>Trey Springer - Tech Consultant, Software Developer, All-Around Good Guy: HOME</title>
+    <link href="assets/trajanpro.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/screen.css" rel="stylesheet" type="text/css" media="screen, projection">
+    <link href="assets/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="assets/style.css" rel="stylesheet" type="text/css" media="screen, projection">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" ></script>
+    <script language="javascript">
+		var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-8644159-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
     </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+</head>
 
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
+<body>
+	<div class="container">
+        <div class="span-24 main-image">
+        	<h1 class="span-24">treyspringer.com</h1>
+            <div class="span-11 push-1 content-wrapper hide" id="tech-consultant">
+            	<div class="page-content">
+                	<h2>accessible technical consulting.</h2>
+            		<p>Not everyone needs a Twitter account. Not everyone needs a new website. Not everyone needs to feel confused about everything about the web, social media, enterprise software, or general IT planning.</p>
+                    <p>That's where Trey comes in. High-level conversations with decision-makers paired with technical discussions with those who implement. Oh, and he'll implement it too, if you'd like.</p>
+                    <p>Dozens of successful projects as a consultant on IT, social media, enterprise software, and supply chain. Not bad for such a young face, eh?</p>
+                    <p>Find out more below.</p>
+                </div>
+            </div>
+            <div class="span-11 push-1 content-wrapper hide" id="software-developer">
+            	<div class="page-content">
+                	<h2>a software craftsman.</h2>
+                	<p>Blacksmiths have their anvils. Trey has a text editor.</p>
+                    <p>With a repitoire of languages that grows every day, Trey can figure out a solution that works for your company. HTML, CSS, JavaScript, iOS languages, SQL, just to name a few. Even VB6 if your heart so desires.
+                    <p>Whether it's a public website, an internal informational page, a tool to make your daily tasks easier, or an enterprise application, Trey can help craft it. And if he can't do it, he'll find someone who can.</p>
+                    <p>Find out more below.</p>
+             	</div>
+            </div>
+            <div class="span-11 push-1 content-wrapper hide" id="contact-trey">
+            	<div class="page-content">
+                	<h2>thanks for stopping by.</h2>
+                    <p>You can contact Trey in a myriad of different ways:</p>
+                    <ul class="contact">
+                      <!-- <li><a href="http://www.treyspringer.com/blog/">Trey's Blog</a></li> -->
+                    <li><a href="mailto:dfsiii@gmail.com">Email</a></li>
+                    <li><a href="http://www.twitter.com/umtrey">Twitter</a></li>
+                    <li><a href="http://www.linkedin.com/in/treyspringer">LinkedIn</a></li>
+                    <li><a href="http://www.facebook.com/umtrey">Facebook</a></li>
+                    <li><a href="https://plus.google.com/108616833719693199178/">Google Plus</a>
+                    </ul>
+                    <p>I think Trey likes you already.</p>
+                </div>
+            </div>
         </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
+        <div class="span-5 prepend-2"><a id="xx-tech-consultant" href="#"><img alt="tech-consultant-award" src="assets/award1.png"></a></div>
+        <div class="span-5 "><a id="xx-software-developer" href="#"><img alt="software-developer-award" src="assets/award2.png"></a></div>
+        <div class="span-5 "><a id="a-blog" href="#"><img alt="blog-award" src="assets/award3.png"></a></div>
+        <div class="span-5 append-2 last"><a id="xx-contact-trey" href="#"><img alt="contact-award" src="assets/award4.png"></a></div>
     </div>
-  </body>
+    <script language="javascript">
+    	//$("#a-tech-consultant").click(function (event) {
+		//	event.preventDefault();
+		//	$("#tech-consultant").toggleClass("hide");
+		//});
+		$("a").click(function() {
+			if(($(this).attr('id').indexOf("xx")) != -1) {
+				var curState = $(document.getElementById($(this).attr('id').substr(3))).hasClass("hide");
+				$(".content-wrapper").toggleClass("hide",true);
+				$(document.getElementById($(this).attr('id').substr(3))).toggleClass("hide",!curState);
+			} else {
+				$(".content-wrapper").toggleClass("hide",true);
+			}
+		});
+		
+    </script>
+</body>
 </html>

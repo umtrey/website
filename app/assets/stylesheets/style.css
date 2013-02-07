@@ -1,0 +1,62 @@
+/* CSS Document */
+
+body {
+	background: #090909;
+	color: #fff;
+}
+
+.main-image {
+	background-image: url(speaking.jpg);
+	height: 630px;
+}
+
+.main-image2 {
+	background-image: url(canyon.jpg);
+	height: 630px;
+}
+
+.main-image > h1 {
+	padding-top: 40px;
+	padding-left: 40px;
+	color: #fff;
+	font-family: "Trajan Pro", Arial, Helvetica, sans-serif;
+}
+
+.main-image2 > h1 {
+	padding-top: 40px;
+	padding-left: 40px;
+	color: #000;
+	font-family: "Trajan Pro", Arial, Helvetica, sans-serif;
+}
+
+.page-content
+{
+	height: 260px;
+	background-color: rgba(255,255,255,.4);
+	border: solid 5px rgba(255,255,255,.8);
+	padding: 10px;
+	
+}
+
+.page-content > h2
+{
+	font-family: "Trajan Pro", Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	color: #fff;
+}
+
+.page-content > p
+{
+	font-size: 1.2 em;
+	color: #fff;
+}
+
+.contact
+{
+	color: #fff;
+}
+
+.contact :link, :visited, :active
+{
+	color: #fff;
+}
